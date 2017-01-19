@@ -70,7 +70,7 @@ ul.menubar-list{
 /*Info styling-END*/
 
 
-
+/*FAQ Styling*/
 
 #firstAnswer {
 	display: none;
@@ -97,7 +97,7 @@ div.desc {
     text-align: center;
 }
 
-
+/*FAQ Styling-END*/
 
 /*Google map window styling*/
 .google-map-frame {
@@ -111,11 +111,9 @@ div.desc {
 .footer {
 	margin-bottom: 20px;
 	background-color: #778899;
-	//background: #333 no-repeat center;
 }
 
 .contactDetails {
-	//display: inline-block;
 	float: left;
 	width: 100%;
 	background-color: #000;
