@@ -1,6 +1,6 @@
 .jumbotron {
 	background-color: #551a8b;
-	color:#fff;
+	background:#333 url("http://lorempixel.com/800/600/city/3/") no-repeat center;
 }
 
 .jumbotron h1 {
@@ -9,4 +9,116 @@
 
 .jumbotron p {
 	color: green;
+}
+
+.introduction {
+	background-color: #ccc;
+}
+
+.introduction img {
+	float: left;
+	border: 2px #000 solid;
+	padding-left: 0px;
+	border-radius:20%;
+}
+
+.introduction p {
+	float: left;
+}
+
+.description {
+	background-color: red;
+}
+
+.faq {
+	display: block;
+}
+
+#firstAnswer {
+	display: none;
+}
+
+div.img {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.header {
+	margin-top: 20px;
+}
+
+.footer {
+	margin-bottom: 20px;
+	background-color: #778899;
+	//background: #333 no-repeat center;
+}
+
+.contactDetails {
+	//display: inline-block;
+	float: left;
+	width: 100%;
+	background-color: #000;
+	padding: 30px 0;
+	margin: 20px 0;
+
+}
+
+.contactDetails a {
+	color: red;
+}
+
+.contactDetails a:hover {
+	color: green;
+	text-decoration: line-through;
+}
+
+.contactDetails a:visited {
+	color: purple;
+}
+
+.mapHolder {
+	text-align: center;
+	height: 300px;
+}
+
+.imageHolder {
+	position: relative;
+  	text-align: center;
+  	top: 0;
+  	left: 0;
+}
+
+
+
+.image1 {
+  position: relative;
+  opacity: 0.4;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 500px;
+   height: 500px;
+   margin-top: -250px; /* Half the height */
+   margin-left: -250px; /* Half the width */
 }
