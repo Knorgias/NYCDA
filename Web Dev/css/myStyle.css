@@ -61,10 +61,10 @@ ul.menubar-list{
 	border-radius:20%;
 }
 
-.profileImageContainer {
+.profileImage {
 	max-width: 250px;
  	max-height: 250px;
-	border-radius: 180px; 
+	border-radius: 180px;
 }
 
 /*Info styling-END*/
@@ -136,4 +136,3 @@ div.desc {
 }
 
 /*Footer styling-END */
-
