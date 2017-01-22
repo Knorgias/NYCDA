@@ -1,24 +1,52 @@
  //Make menu bar fixed after scroll
-var navPositionY = $('.menubar').offset().top;
+// var navPositionY = $('.menubar').offset().top;
 
-function logScroll() {
+// function logScroll() {
 
-  if ($(window).scrollTop() >= navPositionY) {
-    //console.info('DOWN square '+ squarePositionY+ ' window scroll:' +$(window).scrollTop() );
-    $('.menubar')
-      .css('position', 'fixed')
-      .css('top', '0')
-      .css('left', '0')
-      .css('width', '100%')
-  } else {
-    //console.info('UP square '+ squarePositionY+ ' window scroll:' +$(window).scrollTop() );
-    $('.menubar')
-      .css('position', 'relative')
+//   if ($(window).scrollTop() >= navPositionY) {
+//     //console.info('DOWN square '+ squarePositionY+ ' window scroll:' +$(window).scrollTop() );
+//     $('.menubar')
+//       .css('position', 'fixed')
+//       .css('top', '0')
+//       .css('left', '0')
+//       .css('width', '100%')
+//       .css('z-index', '10')
+//   } else {
+//     //console.info('UP square '+ squarePositionY+ ' window scroll:' +$(window).scrollTop() );
+//     $('.menubar')
+//       .css('position', 'relative')
 
-  }
+//   }
+// }
+
+// window.onscroll = logScroll;
+
+$(document).ready(function() {
+var stickyNavTop = $('.menubar').offset().top;
+ 
+var stickyNav = function(){
+var scrollTop = $(window).scrollTop();
+      
+if (scrollTop > stickyNavTop) { 
+    $('.menubar').addClass('sticky');
+    $('.info')
+      .css('margin-top', '50px');
+
+} else {
+    $('.menubar').removeClass('sticky');
+    $('.info')
+      .css('margin-top', '0px');
 }
+};
+ 
+stickyNav();
+ 
+$(window).scroll(function() {
+  stickyNav();
+});
+});
 
-window.onscroll = logScroll;
+
 //Make menu bar fixed after scroll-END
 
  //Expand-collapse images
@@ -53,7 +81,6 @@ window.onscroll = logScroll;
         width:"250px",
         height: "250px",
       }, 900);
-      .clearQueue();
       counter += 1;
   }
  });

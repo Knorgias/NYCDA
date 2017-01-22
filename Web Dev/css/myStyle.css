@@ -6,20 +6,23 @@ html, body {
 /*Header styling*/
 
 .header {
-	background-color: #551a8b;
-	background:#333 no-repeat center;
-	border: 4px solid black;
+	background:#006680 no-repeat center;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	text-align: center;
 }
 
 .header h1 {
-	color: #999;
+	color: black;
 }
 
 /*Header styling-END*/
 
 /*Menu bar styling*/
 .menubar {
-	border: 4px solid black;
+	height: 50px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 }
 
 ul.menubar-list{
@@ -27,7 +30,7 @@ ul.menubar-list{
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #333;
+      background-color: #006680;
   }
 
   li {
@@ -50,7 +53,12 @@ ul.menubar-list{
 /*Info styling*/
 .info {
 	background-color: #ccc;
-	margin: auto;
+	width:100%;
+	height: 200px;
+	position:relative;
+	padding: 0px 60px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
 }
 
 .info img {
@@ -62,9 +70,15 @@ ul.menubar-list{
 }
 
 .profileImage {
-	max-width: 250px;
- 	max-height: 250px;
+	width: 200px;
+	float:left;
+	margin-bottom:20px;
 	border-radius: 180px;
+}
+
+.profileHeader {
+	margin:auto;
+	text-align:center;
 }
 
 /*Info styling-END*/
@@ -99,40 +113,52 @@ div.desc {
 
 /*FAQ Styling-END*/
 
-/*Google map window styling*/
-.google-map-frame {
-	text-align: center;
-	height: 300px;
-	border: 4px solid black;
-}
-/*Google map window styling-END*/
-
 /*Footer styling */
-.footer {
-	margin-bottom: 20px;
-	background-color: #778899;
+.location-map {
+	text-align: center;
+	height: 100%;
+	width: 500px;
+	float:left;
 }
 
-.contactDetails {
-	float: left;
-	width: 100%;
-	background-color: #000;
+.footer {
+	vertical-align: center;
+	height: 156px;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-color: #006680;
+}
+
+.contact-details {
+	float: left;	
 	padding: 30px 0;
 	margin: 20px 0;
-
+	font-size: 20px;
 }
 
-.contactDetails a {
-	color: red;
-}
 
-.contactDetails a:hover {
-	color: green;
-	text-decoration: line-through;
-}
-
-.contactDetails a:visited {
-	color: purple;
-}
 
 /*Footer styling-END */
+
+/*Image gallery styling*/
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.2); }
+
+.thumbnail { 
+	transition: all .3s ease-in-out; 
+	}
+.thumbnail:hover { 
+	transform: scale(1.8);
+}
+
+/*Image gallery styling-END*/
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+

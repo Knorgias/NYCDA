@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/lib/bootstrap/bootstrap.min.css"></link>
     <!-- include custom css sheet 3.1.1 -->
     <link rel="stylesheet" href="css/myStyle.css"></link>
+    <!-- include font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -39,14 +41,14 @@
 <!--My Menu Bar END-->
 
 <!-- My info -->
-<div class="info">
-	<p class="profileHeader">
-    <span id="profileName">Konstantinos Norgias </span>
-    <span id="profileOccupation">Web Development Trainee</span>
+<div class="container info">
+	<p class="profile-header">
+    <span id="profileName"><b>Konstantinos Norgias -</b> </span>
+    <span id="profileOccupation"><b>Web Development Trainee</b></span>
   </p>
 
 	<div class="profileImage">
-	 	<img alt="Konstantinos Norgias" title="Konstantinos Norgias" src="images/introduction/me.jpg">
+	 	<img class="grow" alt="Konstantinos Norgias" title="Konstantinos Norgias" src="images/introduction/me.jpg">
 	</div>
 
 	<div class="description">
@@ -56,63 +58,120 @@
 <!-- My info END-->
 
 <!-- My FAQ menu -->
-<div class="faq">
-	<h2>F.A.Q.</h2>
-	<button class="accordion">Question 1</button>
-	<div id="firstQuestion" class="panel">
-	  <h4>What is the meaning of life?</h4>
-	</div>
-	<div id="firstAnswer" class="answer"> bla bla bla</div>
-
-	<button class="accordion">Question 2</button>
-	<div id="secondQuestion" class="panel">
-	  <h4>What is the color of a mirror?</h4>
-	</div>
-
-	<button class="accordion">Question 3</button>
-	<div id="thirdQuestion" class="panel">
-	  <h4>Why did the chicken cross the road?</h4>
-	</div>
+<div class="container">
+  <h2>F.A.Q.</h2>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">What is the meaning of life?</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">God, for some, is the answer to the purpose of life question. 
+          For others, the answer is yet to be discovered. For me, there is no purpose. 
+          We are simply consumed by a question that we still don't have a satisfactory answer for and I'm sure, 
+          that even if we do find that conclusive answer, our human nature and psychological attributes (as they are now) 
+          will never allow us to accept it. Our ego, will not allow us to do so.
+          Maybe, just maybe, the next phase of human evolution will allow us to be more objective and eradicate the genes 
+          that drive us to be so inquisitive about purpose and then, just then, we may be able put this question to rest 
+          and be satisfied with 'there is no purpose to life'.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Why are kittens cute?</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">There is the symbiotic relationship between humans and cats and dogs - dogs assisting humans 
+          to hunt, human employing cats to control pests when growing crops, though I don't think these relationships have 
+          been around long enough to have an evolutionary impact. Then again, if you note the impact of selective breeding, 
+          dogs are very different morpholically to wolves, a change which occurred in a relatively rapid period of time. 
+          So there could potentially be an impact both ways - cats and dogs selectively bred for cuteness, and tribe members 
+          which find cats and dogs cute more likely to be successful as they're better able to hunt or grow crops</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">What is the color of a mirror?</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">A mirror might look silver because it's usually depicted that way in books or movies.  
+          However,  it's actually the color of whatever is reflected onto it. A perfect mirror has specular reflection, 
+          meaning it reflects all light in a single direction equal to what it receives. Specular reflection creates an 
+          image of whatever object is in front of it. But most mirrors we use aren't perfect. In fact, our mirrors reflect 
+          green light, so they often make the objects in them have a greenish tinge.</div>
+      </div>
+    </div>
+  </div> 
 </div>
 <!-- My FAQ menu END-->
 
 <!-- My Image Gallery -->
-<div class="gallery">
-	<div class="galleryImage">
-	    <img src="https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg" alt="Kitten1" width="300" height="200">
-	  <div class="desc">Add a description of the image here</div>
-	</div>
-
-	<div class="galleryImage">
-	    <img src="http://weknowyourdreams.com/images/kittens/kittens-01.jpg" alt="Kitten2" width="300" height="200">
-	  <div class="desc">Add a description of the image here</div>
-	</div>
-
-	<div class="galleryImage">
-	    <img src="http://www.warrenphotographic.co.uk/photography/bigs/19634-Ginger-Maine-Coon-kitten-with-sombrero-hat-on-white-background.jpg" alt="Kitten3" width="300" height="200">
-	  <div class="desc">Add a description of the image here</div>
-	</div>
-
-	<div class="galleryImage">
-	    <img src="http://sereedmedia.com/srmwp/wp-content/uploads/kitten.jpg" alt="Kitten4" width="300" height="200">
-	  <div class="desc">Add a description of the image here</div>
-	</div>
+<div class="container">
+  <h2>Image Gallery</h2>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="thumbnail">
+          <img src="https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>One kitty.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+		<div class="col-md-2">
+      <div class="thumbnail">
+          <img src="http://weknowyourdreams.com/images/kittens/kittens-01.jpg" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>Two kitties.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="thumbnail">
+          <img src="http://www.warrenphotographic.co.uk/photography/bigs/19634-Ginger-Maine-Coon-kitten-with-sombrero-hat-on-white-background.jpg" alt="Nature" style="width:100%">
+          <div class="caption">
+            <p>Three kitties.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="thumbnail">
+          <img src="http://sereedmedia.com/srmwp/wp-content/uploads/kitten.jpg" alt="Fjords" style="width:100%">
+          <div class="caption">
+            <p>Eh!</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- My Image Gallery END-->
 
 
 <!-- My Footer -->
-<div>
+<div class="footer">
 	<!--My Google map frame-->
-      <iframe class="google-map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77944.45348093915!2d4.828574537093134!3d52.37469605192781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1sen!2snl!4v1484746761842" width="70%" zoom="200" frameborder="0" allowfullscreen></iframe>
+  <div class="location-map">
+      <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d77944.45348093915!2d4.828574537093134!3d52.37469605192781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c63fb5949a7755%3A0x6600fd4cb7c0af8d!2sAmsterdam!5e0!3m2!1sen!2snl!4v1484746761842" width="70%" zoom="200" frameborder="0" allowfullscreen></iframe>
+  </div>
     <!--My Google map frame END-->
 
     <!--My Contact Details -->
-    <div class="contactDetails">
+    <div class="contact-details">
       <div class="phone">
+        <i class="fa fa-phone-square" aria-hidden="true"></i>
         <a href="tel: +31 68 26 91 791">+31 68 26 91 791></a>
       </div>
       <div class="email">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
         <a href="mailto: kostasnorgias@gmail.com">kostasnorgias@gmail.com> </a>
       </div>
     </div>
@@ -125,6 +184,10 @@
 <script type="text/javascript" src="js/lib/jquery/jquery.min.js"></script>
 <!-- include custom js script 3.1.1 -->
 <script type="text/javascript" src="js/custom.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 
